@@ -29,7 +29,7 @@
 
 body {
     color: #999999;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-family: 'Roboto Mono', monospace;
     line-height: 1.80857;
 }
@@ -69,12 +69,12 @@ body.demos .container-fluid {
 .bg {
 
     background:
-        /* top, transparent black, faked with gradient */
         linear-gradient(rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0.7)),
-        /* bottom, image */
         url('uploads/landing.JPG');
     height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
@@ -334,11 +334,9 @@ a img.aligncenter {
     HEADER
 -------------------------------------------------------------------*/
 
-.navbar-dark {}
-
 .navbar-dark .navbar-nav .nav-link {
     color: #ffffff;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-size: 14px;
     position: relative;
 }
@@ -369,8 +367,13 @@ a img.aligncenter {
 }
 
 .navbar-dark .navbar-nav .nav-link.active::after {
-    width: 50%;
+    width: 60%;
 }
+
+.nav-item{
+    padding-right: 20px;
+}
+
 
 /*------------------------------------------------------------------
     SECTIONS
